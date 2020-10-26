@@ -60,11 +60,42 @@
 					"script": {
 						"id": "45b183a6-b196-4eb0-a3c8-3226945524ac",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"pm.test(\"Verify Random name\", function () {\r",
+							"pm.test(\"Verify Login request name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).eql(\"Please login first\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/randomName",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"randomName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "randomNameAuth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "98b885cf-27c3-4a9f-b160-446f9dcac3b1",
+						"exec": [
+							"pm.test(\"Verify Login request name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).not.empty;\r",
 							"});"
@@ -111,10 +142,6 @@
 					"script": {
 						"id": "c603c67d-29ce-496f-b031-fdf187b6790d",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
 							"pm.test(\"Verify same name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).not.empty;\r",
@@ -151,10 +178,6 @@
 					"script": {
 						"id": "5cf3ce9b-4f8d-4f3a-ba75-cf2027aaf2ee",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
 							"pm.test(\"Verify update name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).to.eql(\"Hola Jhon Cena\");\r",
@@ -173,6 +196,45 @@
 				"body": {
 					"mode": "raw",
 					"raw": "        {\r\n            \"name\": \"Jhon Cena\"\r\n        }"
+				},
+				"url": {
+					"raw": "{{base_url}}/updateName",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"updateName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateNameNoName",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9d990651-790f-451a-8aca-9fa7dd8b1176",
+						"exec": [
+							"pm.test(\"Verica que no obtuvo el nombre\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.eql(\"Name was not provided\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
 				},
 				"url": {
 					"raw": "{{base_url}}/updateName",
