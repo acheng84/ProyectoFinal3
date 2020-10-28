@@ -3,10 +3,11 @@ pipeline {
     stages {
         stage('Newman Tests') {
             steps {
-                sh '''
+                bat '''
                 cd api/newman
                 newman run proyecto.postman_collection.json -e heroku.postman_environment.json
                 '''
+                
             }
         }
     }
