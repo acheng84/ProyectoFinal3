@@ -4,6 +4,8 @@ pipeline {
         stage('Newman Tests') {
             steps {
                 bat '''
+                node --version
+                npm install -g newman
                 cd api/newman
                 newman run proyecto.postman_collection.json -e heroku.postman_environment.json
                 '''
