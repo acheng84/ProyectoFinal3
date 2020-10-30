@@ -8,8 +8,22 @@ pipeline {
                 npm install -g newman
                 cd api/newman
                 newman run proyecto.postman_collection.json -e heroku.postman_environment.json
-                '''
-                
+                '''                
+            }
+        }
+        stage('RestAssured Tests') {
+            steps {
+                bat '''
+                cd api/rest_assured
+                mvn clean test
+                '''                
+            }
+        }
+        stage('Jmeter Tests') {
+            steps {
+                bat '''
+                .\C:\Users\USUARIO\Documents\JMeter\apache-jmeter-5.3\bin\jmeter -n -t C:\Users\USUARIO\Documents\ProyectoFinal3\load\examen_test_plan.jmx
+                '''                
             }
         }
     }
