@@ -22,7 +22,7 @@ pipeline {
         stage('Jmeter Tests') {
             steps {
                 bat '''
-                .\C:\Users\USUARIO\Documents\JMeter\apache-jmeter-5.3\bin\jmeter -n -t C:\Users\USUARIO\Documents\ProyectoFinal3\load\examen_test_plan.jmx
+                C:\Users\USUARIO\Documents\JMeter\apache-jmeter-5.3\bin\jmeter -n -t C:\Users\USUARIO\Documents\ProyectoFinal3\load\examen_test_plan.jmx
                 '''                
             }
         }
