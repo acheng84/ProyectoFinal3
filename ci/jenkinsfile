@@ -11,14 +11,14 @@ pipeline {
                 '''                
             }
         }
-        stage('RestAssured Tests') {
-            steps {
-                bat '''
-                cd api/rest_assured
-                mvn clean test
-                '''                
-            }
-        }
+   //     stage('RestAssured Tests') {
+   //         steps {
+   //             bat '''
+    //            cd api/rest_assured
+   //             mvn clean test
+  //              '''                
+  //          }
+  //      }
         stage('Jmeter Tests') {
             steps {
                 bat '''
