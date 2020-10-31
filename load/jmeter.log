@@ -1,0 +1,89 @@
+2020-10-31 00:26:10,777 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2020-10-31 00:26:10,796 INFO o.a.j.JMeter: Loading user properties from: C:\Users\USUARIO\Documents\JMeter\apache-jmeter-5.3\bin\user.properties
+2020-10-31 00:26:10,797 INFO o.a.j.JMeter: Loading system properties from: C:\Users\USUARIO\Documents\JMeter\apache-jmeter-5.3\bin\system.properties
+2020-10-31 00:26:10,799 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2020-10-31 00:26:10,799 INFO o.a.j.JMeter: Version 5.3
+2020-10-31 00:26:10,800 INFO o.a.j.JMeter: java.version=1.8.0_251
+2020-10-31 00:26:10,800 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2020-10-31 00:26:10,800 INFO o.a.j.JMeter: os.name=Windows 10
+2020-10-31 00:26:10,800 INFO o.a.j.JMeter: os.arch=amd64
+2020-10-31 00:26:10,800 INFO o.a.j.JMeter: os.version=10.0
+2020-10-31 00:26:10,800 INFO o.a.j.JMeter: file.encoding=Cp1252
+2020-10-31 00:26:10,800 INFO o.a.j.JMeter: java.awt.headless=true
+2020-10-31 00:26:10,800 INFO o.a.j.JMeter: Max memory     =1073741824
+2020-10-31 00:26:10,800 INFO o.a.j.JMeter: Available Processors =4
+2020-10-31 00:26:10,806 INFO o.a.j.JMeter: Default Locale=English (EN)
+2020-10-31 00:26:10,807 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2020-10-31 00:26:10,807 INFO o.a.j.JMeter: JMeterHome=C:\Users\USUARIO\Documents\JMeter\apache-jmeter-5.3
+2020-10-31 00:26:10,807 INFO o.a.j.JMeter: user.dir  =C:\Users\USUARIO\Documents\ProyectoFinal3\load
+2020-10-31 00:26:10,808 INFO o.a.j.JMeter: PWD       =C:\Users\USUARIO\Documents\ProyectoFinal3\load
+2020-10-31 00:26:10,811 INFO o.a.j.JMeter: IP: 192.168.0.9 Name: DESKTOP-I69N085 FullName: DESKTOP-I69N085
+2020-10-31 00:26:10,817 INFO o.a.j.s.FileServer: Default base='C:\Users\USUARIO\Documents\ProyectoFinal3\load'
+2020-10-31 00:26:10,823 INFO o.a.j.s.FileServer: Set new base='C:\Users\USUARIO\Documents\ProyectoFinal3\load'
+2020-10-31 00:26:10,987 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-10-31 00:26:11,016 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-10-31 00:26:11,021 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-10-31 00:26:11,030 INFO o.a.j.s.SaveService: Loading file: examen_test_plan.jmx
+2020-10-31 00:26:11,081 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-31 00:26:11,081 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-31 00:26:11,081 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-31 00:26:11,081 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-31 00:26:11,082 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-10-31 00:26:11,082 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-10-31 00:26:11,151 INFO o.a.j.JMeter: Creating summariser <summary>
+2020-10-31 00:26:11,162 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-10-31 00:26:11,163 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-10-31 00:26:11,164 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-10-31 00:26:11,181 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2020-10-31 00:26:11,181 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2020-10-31 00:26:11,644 INFO o.a.j.JMeter: Running test (1604125571644)
+2020-10-31 00:26:11,684 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2020-10-31 00:26:11,684 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Thread Group.
+2020-10-31 00:26:11,684 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-10-31 00:26:11,685 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=15 delayedStart=false
+2020-10-31 00:26:11,712 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-10-31 00:26:11,712 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-10-31 00:26:11,715 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2020-10-31 00:26:11,767 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-I69N085
+2020-10-31 00:26:11,780 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2020-10-31 00:26:11,782 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2020-10-31 00:26:11,782 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2020-10-31 00:26:11,782 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2020-10-31 00:26:11,782 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2020-10-31 00:26:12,065 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2020-10-31 00:26:12,078 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2020-10-31 00:26:12,078 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2020-10-31 00:26:13,214 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2020-10-31 00:26:13,303 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2020-10-31 00:26:13,305 INFO o.a.j.u.SSLManager: KeyStore created OK
+2020-10-31 00:26:13,305 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2020-10-31 00:26:14,713 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2020-10-31 00:26:14,758 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2020-10-31 00:26:14,759 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2020-10-31 00:26:14,770 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2020-10-31 00:26:14,770 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2020-10-31 00:26:15,390 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2020-10-31 00:26:15,390 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2020-10-31 00:26:16,210 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2020-10-31 00:26:16,898 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2020-10-31 00:26:16,899 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2020-10-31 00:26:17,710 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2020-10-31 00:26:18,309 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2020-10-31 00:26:18,309 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2020-10-31 00:26:19,210 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-6
+2020-10-31 00:26:19,808 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-6
+2020-10-31 00:26:19,809 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-6
+2020-10-31 00:26:20,710 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-7
+2020-10-31 00:26:21,306 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-7
+2020-10-31 00:26:21,306 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-7
+2020-10-31 00:26:22,212 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-8
+2020-10-31 00:26:22,877 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-8
+2020-10-31 00:26:22,877 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-8
+2020-10-31 00:26:23,714 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-9
+2020-10-31 00:26:24,396 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-9
+2020-10-31 00:26:24,397 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-9
+2020-10-31 00:26:25,212 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-10
+2020-10-31 00:26:25,871 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-10
+2020-10-31 00:26:25,871 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-10
+2020-10-31 00:26:25,872 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-10-31 00:26:25,873 INFO o.a.j.r.Summariser: summary =     50 in 00:00:14 =    3.5/s Avg:   186 Min:     0 Max:  2460 Err:    30 (60.00%)
