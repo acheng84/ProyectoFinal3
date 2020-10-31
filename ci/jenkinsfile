@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Newman Tests') {
             steps {
-                bat '''
+                sh '''
                 node --version
                 npm install -g newman
                 cd api/newman
@@ -21,7 +21,7 @@ pipeline {
   //      }
         stage('Jmeter Tests') {
             steps {
-                bat '''
+                sh '''
                 cd load
                 jmeter -n -t examen_test_plan.jmx
                 '''                
