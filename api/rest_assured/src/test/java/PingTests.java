@@ -1,7 +1,4 @@
-import io.restassured.response.Response;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
-
 import static org.hamcrest.core.IsEqual.equalTo;
 
 public class PingTests extends BaseTest{
@@ -15,6 +12,6 @@ public class PingTests extends BaseTest{
                 .then()
                 .statusCode(200)
                 .header("Access-Control-Allow-Origin", equalTo("http://localhost"))
-                .body("id", equalTo(3),"response", equalTo("pong"));
+                .body("id", equalTo(3), "response", equalTo("pong"));
     }
 }
