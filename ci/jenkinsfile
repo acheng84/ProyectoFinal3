@@ -7,8 +7,6 @@ pipeline {
                 node --version
                 cd api/newman
                 newman run proyecto.postman_collection.json -e heroku.postman_environment.json
-                cd..
-                cd..
                 '''                
             }
         }
