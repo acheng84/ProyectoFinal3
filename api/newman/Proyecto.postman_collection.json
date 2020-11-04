@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Status",
+			"name": "status",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -95,7 +95,7 @@
 					"script": {
 						"id": "98b885cf-27c3-4a9f-b160-446f9dcac3b1",
 						"exec": [
-							"pm.test(\"Verify Login request name\", function () {\r",
+							"pm.test(\"Verify name is not empty\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.name).not.empty;\r",
 							"});"
@@ -176,7 +176,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "5cf3ce9b-4f8d-4f3a-ba75-cf2027aaf2ee",
+						"id": "93dc8467-6b70-4046-9f85-9b282c3da5a3",
 						"exec": [
 							"pm.test(\"Verify update name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
@@ -215,9 +215,9 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "9d990651-790f-451a-8aca-9fa7dd8b1176",
+						"id": "e4b6a6ad-e635-48db-b874-be3d3eaf3881",
 						"exec": [
-							"pm.test(\"Verica que no obtuvo el nombre\", function () {\r",
+							"pm.test(\"Verify that name was not provided\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.eql(\"Name was not provided\");\r",
 							"});"
