@@ -10,7 +10,6 @@ pipeline {
                 '''                
             }
         }
-
         stage('Jmeter Tests') {
             steps {
                 sh '''
