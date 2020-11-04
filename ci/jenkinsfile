@@ -16,7 +16,7 @@ pipeline {
                 sh '''
                 cd load
                 jmeter -n -t examen_test_plan.jmx
-                '''                
+                '''               
             }
         }
     }
