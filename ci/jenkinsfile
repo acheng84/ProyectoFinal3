@@ -19,6 +19,13 @@ pipeline {
                 '''               
             }
         }
+        stage('RestAssured Tests') {
+            steps {
+                sh '''
+                cd api/rest_assured
+                mvn clean test
+                '''                
+            }
     }
 }
 
