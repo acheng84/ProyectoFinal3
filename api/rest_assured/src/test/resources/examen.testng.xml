@@ -4,7 +4,7 @@
     <parameter name="baseUrl" value="https://api-coffee-testing.herokuapp.com/v1/examen"></parameter>
     <test name="Test Rest Assured">
        <classes>
-         <class name="AutomationTest"/>
+         <class name="AutomationTest"></class>
        </classes>
   </test>
 </suite>
