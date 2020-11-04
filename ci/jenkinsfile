@@ -6,7 +6,7 @@ pipeline {
                 sh '''
                 node --version
                 cd api/newman
-                newman run proyecto.postman_collection.json -e heroku.postman_environment.json
+                newman run Proyecto.postman_collection.json -e Heroku.postman_environment.json
                 '''                
             }
         }
